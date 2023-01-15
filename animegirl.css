@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    animation-fill-mode: both;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction:row;
+    max-width: 900px;
+
+}
+.header {
+    font-family: monospace;
+    color: white;
+    left: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.links {
+    text-decoration: none;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 40px;
+    display: block;
+color: white;
+transition: 0.5s;
+}
+.links:hover {
+    transform: scale(1.05);
+}
